@@ -10,3 +10,14 @@
 考虑到`eclim_2.4.1.jar`要在Eclipse上安装插件
 
 所以，更换环境时，还需要执行一次以上的命令行重新安装
+
+现在可以使用 [Vundle](https://github.com/VundleVim/Vundle.vim) 来安装了，在你的配置文件上添加:
+
+    if has("gui_running")
+        Plugin 'vim-scripts/vim-multiple-cursors'   "  多光标操作
+        Plugin 'https://github.com/scue/vim-eclim_wrapper.git' " eclim for ubuntu
+    endif
+
+由于我只在Ubuntu 14.04 Desktop x64版本上试验这过插件
+
+所以，我不知道其他操作平台能否正常这个插件
